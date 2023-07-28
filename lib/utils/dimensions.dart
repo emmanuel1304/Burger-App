@@ -25,7 +25,7 @@ class Dimensions {
   static double bottomNavbarContainerHeigth = screenHeigth / 12.4;
 
   //food detail background image container heigth
-  static double foodDetailPageBackgroundImageHeigth = screenHeigth / 2.83;
+  static double foodDetailPageBackgroundImageHeigth = screenHeigth / 2.30;
 
   //bottombar container heigths
   static double bottomBarMainContainerHeigth = screenHeigth / 8.26;

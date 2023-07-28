@@ -26,6 +26,7 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
           color: Color.fromARGB(255, 224, 222, 222),
         ),
         child: Row( 
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [ 
             Container( 
@@ -62,7 +63,12 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
                 borderRadius: const BorderRadius.all(Radius.circular(20)),
                 color: Colors.green.shade300,
               ),
-              child: BigText(text: ""),
+              child: Row( 
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [ 
+                  BigText(text: "\$10 | Add to cart", color: Colors.white,)
+                ],
+              ),
             )
           ],
         ),
@@ -74,11 +80,11 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
             right: 0,
             child: Container( 
               width: double.maxFinite,
-              height: Dimensions.foodDetailPageBackgroundImageHeigth,
+              height: 430,
               decoration: const BoxDecoration( 
                 image: DecorationImage( 
                   fit: BoxFit.cover,
-                  image: AssetImage("assets/images/burger3.webp"))
+                  image: AssetImage("assets/images/burger5.png"))
               ),
             ),
           ), 
@@ -105,8 +111,8 @@ class _FoodDetailPageState extends State<FoodDetailPage> {
               padding: EdgeInsets.only(left: Dimensions.bottomNavbarContainerPadding20, right: Dimensions.bottomNavbarContainerPadding20, top: Dimensions.bottomNavbarContainerPadding20),
               height: 300,
               decoration: const BoxDecoration( 
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(30), topRight: Radius.circular(30)),
-                color: Colors.green,
+                borderRadius: BorderRadius.only(topLeft: Radius.circular(40), topRight: Radius.circular(40)),
+                color: Colors.white,
               ),
               child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

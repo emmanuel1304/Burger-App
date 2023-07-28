@@ -22,7 +22,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     pageController.addListener(() {
       setState(() {
         _currentPageValue = pageController.page!;
-        print("Current Page Value is : $_currentPageValue");
+        //print("Current Page Value is : $_currentPageValue");
       });
     });
   }
@@ -97,7 +97,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                       decoration: BoxDecoration( 
                         borderRadius: BorderRadius.circular(20),
                         image: const DecorationImage( 
-                          image: AssetImage("assets/images/burger3.webp"),
+                          image: AssetImage("assets/images/burger6.jpg"),
                           fit: BoxFit.cover
                         )
                       ),
@@ -170,7 +170,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
               borderRadius: BorderRadius.all(Radius.circular(30)),
               color: Colors.blue,
               image: DecorationImage(
-                  image: AssetImage("assets/images/burger4.jpg"),
+                  image: AssetImage("assets/images/burger5.png"),
                   fit: BoxFit.cover)),
         ),
 
