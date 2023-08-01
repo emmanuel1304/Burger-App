@@ -7,6 +7,6 @@ class PorpularProductRepo extends GetxService {
   PorpularProductRepo({required this.apiClient});
 
   Future<Response> getporpularProductList() async {
-    return await apiClient.getData("https://dbestech.com");
+    return await apiClient.getData("projects/");
   }
 }

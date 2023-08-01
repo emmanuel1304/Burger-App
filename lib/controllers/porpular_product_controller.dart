@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:burger/data/repository/porpular_product_repo.dart';
+import 'package:burger/models/products_model.dart';
 import 'package:get/get.dart';
 
 class PorpularProductControler extends GetxController {
@@ -11,8 +14,15 @@ class PorpularProductControler extends GetxController {
     Response response = await porpularProductRepo.getporpularProductList();
 
     if (response.statusCode == 200) {
+      String? jsonString = response.bodyString;
+      List<dynamic> jsonDataList = jsonDecode(jsonString!);
+      //print(response.body);
       porpularProductList = [];
-      porpularProductList.addAll(response.body);
+      jsonDataList.forEach((jsonData) {
+        Products products = Products.fromJson(jsonData);
+        porpularProductList.add(products);
+      });
+
       update();
     } else {
       //
