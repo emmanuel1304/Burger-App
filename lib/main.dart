@@ -1,4 +1,5 @@
-import 'package:burger/pages/food_detail_page/food_detail.dart';
+//import 'package:burger/pages/food_detail_page/food_detail.dart';
+import 'package:burger/pages/food_detail_page/recommended_food_detail.dart';
 //import 'package:burger/pages/home_page/main_food_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const FoodDetailPage(),
+      home: const RecommendedFoodDetail(),
     );
   }
 }
